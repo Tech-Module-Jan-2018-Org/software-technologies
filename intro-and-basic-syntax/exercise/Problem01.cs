@@ -6,7 +6,6 @@ namespace Test1
     {
         static void Main(string[] args)
         {
-
             String name = Console.ReadLine();
             int health = int.Parse(Console.ReadLine());
             int maxHealth = int.Parse(Console.ReadLine());
@@ -17,10 +16,7 @@ namespace Test1
             Console.WriteLine("Name: " + name);
             for (int i = 0; i < maxHealth + 2; i++)
             {
-
                 sb.Append("|");
-
-
             }
             for (int i = maxHealth; i > health; i--)
             {
@@ -30,10 +26,7 @@ namespace Test1
 
             for (int i = 0; i < maxEnergy + 2; i++)
             {
-
                 sb2.Append("|");
-
-
             }
             for (int i = maxEnergy; i > energy; i--)
             {
@@ -41,13 +34,6 @@ namespace Test1
             }
 
             Console.WriteLine("Energy: " + sb2);
-
-
-
-
-
         }
-
-
     }
 }
