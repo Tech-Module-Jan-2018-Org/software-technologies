@@ -8,10 +8,6 @@ namespace Test1
         {
 
             String name = Console.ReadLine();
-        jhvghjgkjhg
-                zdr
-                zdr
-                zdr
 
 
     }
