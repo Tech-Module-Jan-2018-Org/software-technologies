@@ -7,17 +7,17 @@ namespace P05_CharacterStats
         public static void Main(string[] args)
         {
             //input
-            var characterName = Console.ReadLine();
-            var characterHealth = int.Parse(Console.ReadLine());
-            var maxHealth = int.Parse(Console.ReadLine());
-            var characterEnergy = int.Parse(Console.ReadLine());
+            var heroName = Console.ReadLine();
+            var heroHp = int.Parse(Console.ReadLine());
+            var maxHp = int.Parse(Console.ReadLine());
+            var heroEnergy = int.Parse(Console.ReadLine());
             var maxEnergy = int.Parse(Console.ReadLine());
             // using the method
-            string healthBar = buildStatBar(characterHealth, maxHealth);
-            string energyBar = buildStatBar(characterEnergy, maxEnergy);
+            string hpBar = buildStatBar(heroHp, maxHp);
+            string energyBar = buildStatBar(heroEnergy, maxEnergy);
             //output
-            Console.WriteLine($"Name: {characterName}");
-            Console.WriteLine($"Health: {healthBar}");
+            Console.WriteLine($"Name: {heroName}");
+            Console.WriteLine($"Health: {hpBar}");
             Console.WriteLine($"Energy: {energyBar}");
         }
         //Method about the helth and energy
