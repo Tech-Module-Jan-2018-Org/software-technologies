@@ -11,15 +11,15 @@ namespace P04_BeverageLabels
             public static void Main(string[] args)
             {
                 //reading the Input
-                var product = Console.ReadLine();
-                var volume = int.Parse(Console.ReadLine());
-                var energyPer100ml = int.Parse(Console.ReadLine());
-                var sugarPer100ml = int.Parse(Console.ReadLine());
+                var Product = Console.ReadLine();
+                var Volume = int.Parse(Console.ReadLine());
+                var ebPer100ml = int.Parse(Console.ReadLine());
+                var sugPer100ml = int.Parse(Console.ReadLine());
                 //calculating total energy and sugar
-                double totalEnergy = energyPer100ml / 100.0 * volume;
-                double totalSugar = sugarPer100ml * volume / 100.0;
+                double totalEnergy = ebPer100ml / 100.0 * Volume;
+                double totalSugar = sugPer100ml * Volume / 100.0;
                 //printing result
-                Console.WriteLine("{0}ml {1}:", volume, product);
+                Console.WriteLine("{0}ml {1}:", Volume, Product);
                 Console.WriteLine("{0}kcal, {1}g sugars", totalEnergy, totalSugar);
             }
         }
