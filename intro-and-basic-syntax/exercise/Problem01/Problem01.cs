@@ -1,39 +1,18 @@
 ﻿using System;
 
-namespace Test1
+namespace P01_DebitCardNumber
 {
-    class Min3Numbers
+    public class P01_DebitCardNumber
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            String name = Console.ReadLine();
-            int health = int.Parse(Console.ReadLine());
-            int maxHealth = int.Parse(Console.ReadLine());
-            int energy = int.Parse(Console.ReadLine());
-            int maxEnergy = int.Parse(Console.ReadLine());
-            System.Text.StringBuilder sb = new System.Text.StringBuilder();
-            System.Text.StringBuilder sb2 = new System.Text.StringBuilder();
-            Console.WriteLine("Name: " + name);
-            for (int i = 0; i < maxHealth + 2; i++)
-            {
-                sb.Append("|");
-            }
-            for (int i = maxHealth; i > health; i--)
-            {
-                sb[i] = '.';
-            }
-            Console.WriteLine("Health: " + sb);
-
-            for (int i = 0; i < maxEnergy + 2; i++)
-            {
-                sb2.Append("|");
-            }
-            for (int i = maxEnergy; i > energy; i--)
-            {
-                sb2[i] = '.';
-            }
-
-            Console.WriteLine("Energy: " + sb2);
+            //input
+            var num1 = int.Parse(Console.ReadLine());
+            var num2 = int.Parse(Console.ReadLine());
+            var num3 = int.Parse(Console.ReadLine());
+            var num4 = int.Parse(Console.ReadLine());
+            //Formating the numbers and printing them on the console
+            Console.WriteLine("{0:D4} {1:D4} {2:0000} {3:0000}", num1, num2, num3, num4);
         }
     }
 }
